@@ -1,0 +1,45 @@
+
+
+
+class Outer{
+
+		protected static int m = 12 ;
+
+	static class Inner{
+	
+	
+		void print()
+		{
+		
+		System.out.println("Hello I am Static Inner Class"+m);
+		
+		
+		}
+	
+	
+	
+	
+	}
+
+
+
+}
+
+class DemoOfStatic {
+
+
+	public static void main(String args[])
+	{
+	
+	
+		Outer.Inner obj = new Outer.Inner();
+		
+		obj.print();
+	
+	
+	
+	
+	}
+
+
+}
