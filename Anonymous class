@@ -1,0 +1,94 @@
+
+
+class Dog{
+
+
+	void run(){
+
+	
+		System.out.println(" Dog is Running Fast");
+
+
+	}
+
+
+
+
+}
+
+
+class Son extends Dog{
+
+
+		Dog d = new Dog(){
+		
+		
+		void run(){
+		
+		
+			System.out.println(" Dog is Not Running");
+		
+		
+		
+		}
+		
+		
+		
+		};
+
+
+
+
+
+}
+
+
+
+class Demo{
+
+
+	public static void main(String ar[]){
+	
+	
+		Dog dog = new Dog(){
+		
+		
+		void run(){
+		
+		
+		System.out.println( "Dog is Running Slow");
+		
+		
+		}
+		
+		
+		
+		
+		};
+		
+		dog.run();
+		
+		Dog ob = new Dog();
+		
+		ob.run();
+		
+		
+		Son s = new Son();
+		
+		Dog m = new Son() ;
+		
+		m.run();		// oposite of Overriding Rule ?
+		
+		
+		s.d.run();
+	
+	
+	
+	
+	}
+
+
+
+
+
+}
