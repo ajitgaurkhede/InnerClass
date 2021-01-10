@@ -1,0 +1,39 @@
+
+
+class Outerclass{
+
+	static int x = 100;
+
+
+	 class Iner{
+	
+			void print(){
+	
+			System.out.println("This is non static inner class"+x);
+		
+			}
+	
+	}
+
+
+
+
+}
+
+class Demo{
+
+
+	public static void main(String args[]){
+
+	
+		Outerclass outer = new Outerclass();
+		
+		Outerclass.Iner inner = outer.new Iner();
+		
+		inner.print();
+
+
+	}
+
+
+}
